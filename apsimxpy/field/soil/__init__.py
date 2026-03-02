@@ -128,15 +128,15 @@ class Soil(ApsimModifier):
         if r=='C': # Medium
             for idx,h_top in enumerate(top):
                 xf=[1,1,1,1,1,1,1,1,1,1]
-                fbiom=[0.03,0.025,0.02,0.015,0.015,0.01,0.005,0.001,0.001,0.001]
-                finer=[0.5,0.55,0.6,0.75,0.8,0.85,0.9,0.95,0.97,0.99]
+                fbiom=[0.04,0.035,0.015,0.015,0.01,0.01,0.005,0.001,0.001,0.001]
+                finer=[0.4,0.45,0.47,0.48,0.49,0.5,0.55,0.75,0.9,0.98]
                 
             soil_phy_crop.set_xf(xf) 
             soil_org.set_FBiom(fbiom)
             soil_org.set_FInert(finer)
                 
 
-            no3=list(np.random.uniform(0, 10, len(soil_phy.get_Thickness())))
+            no3=list(np.random.uniform(0, 8, len(soil_phy.get_Thickness())))
             soil_che.set_no3_initial_values(no3)            
             
             soil_org.set_SoilCNRatio([13 for hzn in soil_phy.get_Thickness()])
@@ -154,7 +154,7 @@ class Soil(ApsimModifier):
             soil_org.set_FInert(finer)
             
 
-            no3=list(np.random.uniform(0, 4.5, len(soil_phy.get_Thickness())))
+            no3=list(np.random.uniform(0, 8, len(soil_phy.get_Thickness())))
             soil_che.set_no3_initial_values(no3)
             
             soil_org.set_SoilCNRatio([13 for hzn in soil_phy.get_Thickness()])
@@ -168,7 +168,7 @@ class Soil(ApsimModifier):
             soil_org.set_FBiom(fbiom)
             soil_org.set_FInert(finer)
             
-            no3=list(np.random.uniform(0, 11, len(soil_phy.get_Thickness())))
+            no3=list(np.random.uniform(0, 14, len(soil_phy.get_Thickness())))
             soil_che.set_no3_initial_values(no3)
             
             soil_org.set_SoilCNRatio([13 for hzn in soil_phy.get_Thickness()])

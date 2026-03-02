@@ -25,6 +25,7 @@ class Weather(ApsimModifier):
     
     # To get the weather from daymet
     def get_weather(self,coords,clock_object,filename): # latlong should be a tuple
+        # coords: EPSG:4326 EPSG:32616
         filename=filename+'.met'
         vars = ["prcp", "tmin", "tmax", "vp", "swe", "dayl", "srad"]
         dates=(clock_object.get_StartDate(),clock_object.get_EndDate())
