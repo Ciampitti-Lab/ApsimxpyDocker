@@ -1,10 +1,9 @@
-# apsimxpy (APSIMNG-Python)
+# apsimxpy (APSIMNG-python)
 
-APSIM NG simulations in Python.
+APSIM Simulations using apsiminitiative/apsimng docker image.
 
 ## 🚀 Features
 - apsimxpy module (APSIM NG simulations in Python)
-- workflow using apsimxpy
 
 ## 📂 Module 
 ### 🧩 Structure
